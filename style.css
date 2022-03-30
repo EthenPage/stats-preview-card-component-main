@@ -6,7 +6,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
 }
 
 /* Primary Colors */
@@ -116,7 +115,7 @@ span{
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
-        
+        overflow: hidden;
     }
 /* 
     .card-text, .img-blend{
