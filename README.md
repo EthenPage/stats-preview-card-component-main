@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/completely-device-responsive-card-component-r1_XFvzQq)
 - Live Site URL: [Live on github](https://ethenpage.github.io/stats-preview-card-component-main)
 
 ### Built with
