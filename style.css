@@ -26,27 +26,27 @@ body{
     background-color: var(--main_background);
     max-width: 100%;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     font-family: 'Lexend Deca', sans-serif;
 }
 
 .card{
-    /* width: 90%; */
-    margin: 0px auto;
     background-color: var(--card_background);
     border-radius: 5px 5px;
+    max-width: 375px;
+    margin: 0 auto;
 }
 
 .card-image{
     max-width: 100%;
+    display: block;
+    margin: 0 auto;
     border-radius: 5px 5px 0 0;
 }
 
 .card-text{
     padding: 30px;
+    max-width: 425px;
+    margin: 0 auto;
     color: var(--main_heading);
 }
 
@@ -65,7 +65,7 @@ span{
 .card-text-desc h1{
     line-height: 1.2;
     letter-spacing: 2px;
-    font-size: 2rem;
+    font-size: 1.9rem;
 }
 
 .card-text-desc p{
@@ -75,13 +75,15 @@ span{
 }
 
 .num{
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
 .info{
-    padding: 5px;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    padding: 5px 0;
     text-transform: uppercase;
     color: var(--stat_headings);
 }
@@ -89,3 +91,52 @@ span{
 .card-text-info-item{
     padding-bottom: 25px;
 }
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+    body{
+        text-align: left;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card{
+        width: 80%;
+        max-width: 1440px;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .card-text, .card-image{
+        flex: 1;
+    }
+
+    .card-text-info{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card-image{
+        border-radius: 0 5px 5px 0;
+    }
+
+    .card-text{
+        max-width:500px;
+    }
+
+    .card-text-desc p{
+        padding-bottom: 80px;
+    }
+
+    .card-text-info-item{
+        padding-bottom: 0px;
+    }
+}
+
