@@ -34,8 +34,8 @@ body{
 }
 
 .card{
-    width: 90%;
-    margin: 0 auto;
+    /* width: 90%; */
+    margin: 0px auto;
     background-color: var(--card_background);
     border-radius: 5px 5px;
 }
@@ -65,12 +65,13 @@ span{
 .card-text-desc h1{
     line-height: 1.2;
     letter-spacing: 2px;
+    font-size: 2rem;
 }
 
 .card-text-desc p{
     line-height: 1.7;
     letter-spacing: 1px;
-    font-size: 15px;
+    font-size: 0.9375rem;
 }
 
 .num{
