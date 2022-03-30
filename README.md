@@ -1,4 +1,4 @@
-# Frontend Mentor - Stats preview card component solution
+# Completely Device Responsive Card Component
 
 Solution of [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). 
 
