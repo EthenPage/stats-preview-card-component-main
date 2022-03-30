@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 /* Primary Colors */
@@ -36,11 +37,16 @@ body{
     margin: 0 auto;
 }
 
+.img-blend{
+    background-color: var(--accent);
+}
+
 .card-image{
     max-width: 100%;
     display: block;
     margin: 0 auto;
     border-radius: 5px 5px 0 0;
+    mix-blend-mode: multiply;    /* blend its parrents background-color */
 }
 
 .card-text{
@@ -75,8 +81,8 @@ span{
 }
 
 .num{
-    font-size: 1.6rem;
-    font-weight: 700;
+    font-size: 1.4rem;
+    font-weight: 400;
     letter-spacing: 1px;
 }
 
@@ -93,7 +99,7 @@ span{
 }
 
 /* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1224px) {
+@media only screen  and (min-width : 1024px) {
     body{
         text-align: left;
         height: 100vh;
@@ -112,10 +118,10 @@ span{
         align-items: center;
         
     }
-
-    .card-text, .card-image{
+/* 
+    .card-text, .img-blend{
         flex: 1;
-    }
+    } */
 
     .card-text-info{
         width: 90%;
@@ -125,6 +131,7 @@ span{
 
     .card-image{
         border-radius: 0 5px 5px 0;
+        max-width: 150%;
     }
 
     .card-text{
